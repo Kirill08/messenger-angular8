@@ -1,0 +1,51 @@
+.massenger-headbar {
+
+  .wrapper {
+    display: grid;
+    grid-template-columns: 80% 20%;
+    align-items: end;
+
+    //   > div {
+    //   border-color: red;
+    //   border-style: solid;
+    // }
+  }
+
+  padding: 15px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+  position: sticky;
+  top: 0;
+  // background-color: #262B2E;
+  z-index: 1;
+
+  .align-item-center {
+    align-items: center!important;
+  }
+
+  .mb-0 {
+    margin-bottom: 0!important;
+  }
+
+    .media {
+      display: flex;
+      align-items: flex-start;
+  }
+
+  .mb-0 {
+    margin-bottom: 0!important;
+  }
+
+  .mt-2 {
+    margin-top: .5rem!important;
+  }
+
+  .pl-0 {
+    padding-left: 0;
+  }
+
+  .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+    color: #ffffff;
+  }
+
+}

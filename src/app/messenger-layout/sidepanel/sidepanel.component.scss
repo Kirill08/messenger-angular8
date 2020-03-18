@@ -1,0 +1,11 @@
+.wrapper-sidepanel {
+  display: grid;
+  grid-template-rows: 10% 10% 70% 10%;
+  height: 100vh;
+  align-items:inherit;
+
+  // > div {
+  //   border-color: red;
+  //   border-style: solid;
+  // }
+}

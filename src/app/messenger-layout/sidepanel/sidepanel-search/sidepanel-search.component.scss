@@ -1,0 +1,25 @@
+.sidepanel-search {
+  .input-group {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    width: 100%;
+  }
+
+  .display-flex {
+    display: flex;
+  }
+
+  .input-group-append {
+    margin-left: 0px;
+  }
+
+  .chat-left-search {
+    padding: 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+    position: sticky;
+    top: 0;
+  }
+
+}

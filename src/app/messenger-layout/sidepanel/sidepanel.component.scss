@@ -1,6 +1,7 @@
 .wrapper-sidepanel {
   display: grid;
-  grid-template-rows: 10% 10% 70% 10%;
+  // grid-template-rows:  minmax(10%, 1fr) minmax(10%, 1fr) 70% 10%;
+  grid-template-rows:  100px 100px 1fr 100px;
   height: 100vh;
   align-items:inherit;
 
@@ -8,4 +9,10 @@
   //   border-color: red;
   //   border-style: solid;
   // }
+
+  .scroll {
+    min-height: 100px;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
 }

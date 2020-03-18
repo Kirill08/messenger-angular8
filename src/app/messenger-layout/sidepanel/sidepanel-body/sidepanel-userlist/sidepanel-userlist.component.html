@@ -1,1 +1,6 @@
-<p>sidepanel-userlist works!</p>
+<div class="sidepanel-userlist wrapper">
+  <!-- <div class="nav" role="tablist" aria-orientation="vertical"> -->
+    <div *ngFor="let user of users$ | async">
+      <app-sidepanel-user></app-sidepanel-user>
+    </div>
+</div>

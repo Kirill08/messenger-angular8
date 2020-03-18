@@ -1,4 +1,8 @@
+import { UsersQuery } from './../../../state/users.query';
+import { UsersService } from './../../../state/books.service';
 import { Component, OnInit } from '@angular/core';
+import { Observable } from 'rxjs';
+import { User } from 'src/app/messenger-layout/state/user.model';
 
 @Component({
   selector: 'app-sidepanel-userlist',
@@ -7,9 +11,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SidepanelUserlistComponent implements OnInit {
 
-  constructor() { }
+  users$: Observable<User[]>;
+  selectLoading$: Observable<boolean>;
+  // sortControl = new FormControl('');
+
+  constructor(private usersService: UsersService,
+              private usersQuery: UsersQuery) { }
 
   ngOnInit() {
+    debugger;
+    this.usersService.getUsers();
+
+    this.users$ = this.usersQuery.selectAll();
+
+    const a = '';
   }
 
 }
